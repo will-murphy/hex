@@ -1,24 +1,3 @@
-nodejs server.js
-node
-node
-node
-node
-node
-node
-node
-node
-node
-node
-node
-node
-node -v
-nodde
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-sudo apt-get install -y nodejs
-sudo apt-get install -y nodejs
-node -v
-node
-node
 node
 node
 node
@@ -498,3 +477,24 @@ curl 'localhost:8000/genmove?password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq
 curl 'localhost:8000/genmove?password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL&moves=%5B%7B%22color%22%3A%22black%22%2C%22move%22%3A%22f6%22%7D%2C%7B%22color%22%3A%22white%22%2C%22move%22%3A%22f5%22%7D%2C%7B%22color%22%3A%22black%22%2C%22move%22%3A%22g5%22%7D%2C%7B%22color%22%3A%22white%22%2C%22move%22%3A%22h3%22%7D%2C%7B%22color%22%3A%22black%22%2C%22move%22%3A%22d6%22%7D%2C%7B%22color%22%3A%22white%22%2C%22move%22%3A%22j2%22%7D%2C%7B%22color%22%3A%22black%22%2C%22move%22%3A%22e4%22%7D%2C%7B%22color%22%3A%22white%22%2C%22move%22%3A%22e6%22%7D%2C%7B%22color%22%3A%22black%22%2C%22move%22%3A%22d7%22%7D%2C%7B%22color%22%3A%22white%22%2C%22move%22%3A%22f2%22%7D%2C%7B%22color%22%3A%22black%22%2C%22move%22%3A%22d3%22%7D%5D'
 curl 'localhost:8000/genmove?password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL&moves=%5B%7B%22color%22%3A%22black%22%2C%22move%22%3A%22f6%22%7D%2C%7B%22color%22%3A%22white%22%2C%22move%22%3A%22f5%22%7D%2C%7B%22color%22%3A%22black%22%2C%22move%22%3A%22g5%22%7D%2C%7B%22color%22%3A%22white%22%2C%22move%22%3A%22h3%22%7D%2C%7B%22color%22%3A%22black%22%2C%22move%22%3A%22d6%22%7D%2C%7B%22color%22%3A%22white%22%2C%22move%22%3A%22j2%22%7D%2C%7B%22color%22%3A%22black%22%2C%22move%22%3A%22e4%22%7D%2C%7B%22color%22%3A%22white%22%2C%22move%22%3A%22e6%22%7D%2C%7B%22color%22%3A%22black%22%2C%22move%22%3A%22d7%22%7D%2C%7B%22color%22%3A%22white%22%2C%22move%22%3A%22f2%22%7D%2C%7B%22color%22%3A%22black%22%2C%22move%22%3A%22d3%22%7D%5D'
 curl 'localhost:8000/genmove?password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL&moves=%5B%7B%22color%22%3A%22black%22%2C%22move%22%3A%22f6%22%7D%2C%7B%22color%22%3A%22white%22%2C%22move%22%3A%22f5%22%7D%2C%7B%22color%22%3A%22black%22%2C%22move%22%3A%22g5%22%7D%2C%7B%22color%22%3A%22white%22%2C%22move%22%3A%22h3%22%7D%2C%7B%22color%22%3A%22black%22%2C%22move%22%3A%22d6%22%7D%2C%7B%22color%22%3A%22white%22%2C%22move%22%3A%22j2%22%7D%2C%7B%22color%22%3A%22black%22%2C%22move%22%3A%22e4%22%7D%2C%7B%22color%22%3A%22white%22%2C%22move%22%3A%22e6%22%7D%2C%7B%22color%22%3A%22black%22%2C%22move%22%3A%22d7%22%7D%2C%7B%22color%22%3A%22white%22%2C%22move%22%3A%22f2%22%7D%2C%7B%22color%22%3A%22black%22%2C%22move%22%3A%22d3%22%7D%5D'
+repeat sudo node direct.js
+repeat sudo node direct.js 80
+repeat sudo node direct.js 80
+repeat sudo node direct.js 80
+repeat sudo node direct.js 80
+sudo node direct.js 80
+sudo node direct.js 80
+sudo node direct.js 80
+sudo node direct.js 80
+sudo node direct.js 80
+sudo node direct.js 80
+ls /home/ubuntu/hex/assets/hex.html
+sudo node direct.js 80
+sudo node direct.js 80
+sudo node direct.js 80
+sudo node direct.js 80
+sudo node direct.js 80
+sudo node direct.js 80
+sudo node direct.js 80
+sudo node direct.js 80
+sudo node direct.js 80

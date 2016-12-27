@@ -32,8 +32,13 @@ let mohex = (moves, callback) => {
     };
     */
 
-    let input = "play black f6\nplay white f5\nplay black g5\nplay white h3\nplay black d6\nplay white j2\nplay black e4\nplay white e6\nplay black d7\nplay white f2\nplay black d3\ngenmove white";
+    //let input = "play black f6\nplay white f5\nplay black g5\nplay white h3\nplay black d6\nplay white j2\nplay black e4\nplay white e6\nplay black d7\nplay white f2\nplay black d3\ngenmove white";
+    let input = moves
+        .map((move) => `play ${move.color} ${move.move}`)
+        .concat(['genmove white'])
+        .join('\n');
 
+    //console.log(input);
     mohex.process.stdin.write(input + '\n'); //, completed);
 };
 
@@ -41,17 +46,24 @@ let express = require('express');
 let app = express();
 let PORT = Number(process.argv[2]);
 
+let logCommunication = (string) => {
+    console.log((new Date()) + ' ' + string);
+};
+
 app.get('/genmove', (req, res) => {
-    console.log('GET /genmove');
+    logCommunication('GET /genmove');
     let moves = JSON.parse(req.query.moves);
+    //console.log(moves);
     mohex(moves, (move) => {
 	let out = JSON.stringify({ move: move, color: 'white' });
-	console.log('Respond: ' + out);
+	logCommunication('Respond: ' + out);
 	res.send(out)})});
 
 app.use(express.static('assets'));
 
-app.get('/', (req, res) => res.sendfile('assets/hex.html'));
+app.get('/', (req, res) => {
+    logCommunication('GET /');
+    res.sendFile('/home/ubuntu/assets/hex.html')});
 
 app.listen(PORT, () => {
   console.log('Example app listening on port ' + PORT + '!');
