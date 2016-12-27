@@ -1,0 +1,25 @@
+Example app listening on port 80!
+Tue Dec 27 2016 02:39:00 GMT+0000 (UTC) GET /genmove
+Tue Dec 27 2016 02:39:00 GMT+0000 (UTC) GET /
+Tue Dec 27 2016 02:39:02 GMT+0000 (UTC) GET /genmove
+Tue Dec 27 2016 02:39:11 GMT+0000 (UTC) Respond: {"move":"f5","color":"white"}
+Tue Dec 27 2016 02:39:23 GMT+0000 (UTC) GET /genmove
+Tue Dec 27 2016 02:39:23 GMT+0000 (UTC) GET /
+Tue Dec 27 2016 02:39:32 GMT+0000 (UTC) Respond: {"move":"f5","color":"white"}
+Tue Dec 27 2016 02:39:49 GMT+0000 (UTC) GET /
+Tue Dec 27 2016 02:39:49 GMT+0000 (UTC) GET /genmove
+Tue Dec 27 2016 02:39:58 GMT+0000 (UTC) Respond: {"move":"h3","color":"white"}
+Tue Dec 27 2016 02:40:18 GMT+0000 (UTC) GET /genmove
+Tue Dec 27 2016 02:40:28 GMT+0000 (UTC) Respond: {"move":"f5","color":"white"}
+Tue Dec 27 2016 02:40:34 GMT+0000 (UTC) GET /genmove
+Tue Dec 27 2016 02:40:43 GMT+0000 (UTC) Respond: {"move":"h3","color":"white"}
+Tue Dec 27 2016 02:42:01 GMT+0000 (UTC) GET /
+Tue Dec 27 2016 02:42:09 GMT+0000 (UTC) GET /genmove
+Tue Dec 27 2016 02:42:19 GMT+0000 (UTC) Respond: {"move":"j2","color":"white"}
+Tue Dec 27 2016 02:42:27 GMT+0000 (UTC) GET /genmove
+Tue Dec 27 2016 02:42:37 GMT+0000 (UTC) Respond: {"move":"f5","color":"white"}
+Tue Dec 27 2016 02:42:41 GMT+0000 (UTC) GET /genmove
+Tue Dec 27 2016 02:42:47 GMT+0000 (UTC) Respond: {"move":"h3","color":"white"}
+Tue Dec 27 2016 02:45:56 GMT+0000 (UTC) GET /
+Tue Dec 27 2016 02:46:01 GMT+0000 (UTC) GET /genmove
+Tue Dec 27 2016 02:46:12 GMT+0000 (UTC) Respond: {"move":"g6","color":"white"}
