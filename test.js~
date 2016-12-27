@@ -1,0 +1,13 @@
+console.log('here');
+
+let 乐天 = 3;
+let {Mohex} = require('./mohex.js');
+let mohex = new Mohex();
+console.log(mohex);
+let moves = [{"color":"black","move":"f6"},{"color":"white","move":"f5"},{"color":"black","move":"g5"},{"color":"white","move":"h3"},{"color":"black","move":"d6"},{"color":"white","move":"j2"},{"color":"black","move":"e4"},{"color":"white","move":"e6"},{"color":"black","move":"d7"},{"color":"white","move":"f2"},{"color":"black","move":"d3"}];
+
+        mohex.playMoves(moves, () =>
+            mohex.playComputerMove((move) => {
+                console.log(move);
+                mohex.kill();
+            }));

@@ -1,0 +1,59 @@
+
+$hex-width: 80px
+$hex-side-length: $hex-width * 0.5773502691896258
+$hex-height: $hex-side-length + 0.5 * $hex-width
+
+.board
+    background: #000
+    white-space: nowrap
+
+    &.landscape
+        transform: rotate(-30deg) matrix(1, 0, 0, 1, 50, 0)
+
+    &.portrait
+        transform: matrix(1, 0, 0, 1, -100, 200) rotate(60deg)
+
+    &> div:nth-child(2n)
+        transform: translateX(0.5 * $hex-width)
+
+
+.hex
+    display: inline-block
+    margin: 0
+    border: none
+    padding: 0
+    width: $hex-width
+    height: 1.5 * $hex-side-length
+
+    &.space
+        opacity: 0
+
+    .in
+        position: absolute
+        border-left: 1px solid #000
+        border-right: 1px solid #000
+        width: $hex-width
+        height: $hex-side-length
+        background: #f8f8f8
+        &:nth-child(2)
+            transform: rotate(60deg)
+        &:nth-child(3)
+            transform: rotate(120deg)
+
+    &.black .in
+        background: red
+
+    &.white .in
+        background: blue
+
+
+.outer
+    border: 1px solid black
+
+.box
+    width: 100px
+    height: 100px
+    background: red
+
+    &.transform
+        transform: skewY(60deg)

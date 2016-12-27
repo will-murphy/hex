@@ -1,0 +1,46 @@
+.board {
+  background: #000;
+  white-space: nowrap; }
+  .board.landscape {
+    transform: rotate(-30deg) matrix(1, 0, 0, 1, 50, 0); }
+  .board.portrait {
+    transform: matrix(1, 0, 0, 1, -100, 200) rotate(60deg); }
+  .board > div:nth-child(2n) {
+    transform: translateX(40px); }
+
+.hex {
+  display: inline-block;
+  margin: 0;
+  border: none;
+  padding: 0;
+  width: 80px;
+  height: 69.28203px; }
+  .hex.space {
+    opacity: 0; }
+  .hex .in {
+    position: absolute;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    width: 80px;
+    height: 46.18802px;
+    background: #f8f8f8; }
+    .hex .in:nth-child(2) {
+      transform: rotate(60deg); }
+    .hex .in:nth-child(3) {
+      transform: rotate(120deg); }
+  .hex.black .in {
+    background: red; }
+  .hex.white .in {
+    background: blue; }
+
+.outer {
+  border: 1px solid black; }
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: red; }
+  .box.transform {
+    transform: skewY(60deg); }
+
+/*# sourceMappingURL=hex.css.map */

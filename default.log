@@ -1,0 +1,57 @@
+528c7 config: MoHex v1.0.GIT Jul  6 2016.
+528c7 config: ============ InitializeSystem ============
+528c7 config: BenzeneProgram::InitRandom()
+528c7 config: Seed = 1482802112
+528c7 config: MoHexSharedPolicy: reading patterns from '/home/ubuntu/benzene/share/mohex-patterns.txt'.
+528c7 config: MoHexSharedPolicy: parsed 1 patterns.
+528c7 config: IcePatternSet: reading from '/home/ubuntu/benzene/share/ice-patterns.txt'.
+528c7 config: IcePatternSet: parsed 708 patterns.
+528c7 config: VCBuilder: reading captured set patterns from '/home/ubuntu/benzene/share/vc-captured-set.txt'.
+528c7 config: VCBuilder:: parsed 2 patterns.
+528c7 config: IcePatternSet: reading from '/home/ubuntu/benzene/share/ice-patterns.txt'.
+528c7 config: IcePatternSet: parsed 708 patterns.
+528c7 config: VCBuilder: reading captured set patterns from '/home/ubuntu/benzene/share/vc-captured-set.txt'.
+528c7 config: VCBuilder:: parsed 2 patterns.
+528c7 config: VCPattern: loading pattern templates from '/home/ubuntu/benzene/share/vc-patterns.txt'.
+528c7 info: Best move cannot be determined, must search state.
+528c7 info: --- MoHexPlayer::Search() ---
+528c7 info: Color: white
+528c7 info: MaxGames: 99999999
+528c7 info: NumberThreads: 1
+528c7 info: MaxNodes: 3252236 (260178880 bytes)
+528c7 info: TimeForMove: 10
+528c7 info: Moves to consider:
+528c7 info: 
+  e0986f07fd3c63f7
+  a  b  c  d  e  f  g  h  i  j  k  
+ 1\.  .  .  .  *  .  .  .  .  .  w\1
+  2\.  .  *  .  .  W  .  .  .  W  w\2
+   3\.  .  *  B  .  .  .  W  .  .  w\3
+    4\.  .  .  *  B  .  .  .  .  .  .\4
+     5\.  .  .  *  .  W  B  .  .  .  .\5
+      6\.  .  .  B  W  B  .  .  .  .  .\6
+       7\.  .  .  B  .  .  .  .  .  .  .\7
+        8\.  .  .  *  .  .  .  .  .  .  .\8
+         9\.  .  .  *  .  .  .  .  .  .  .\9
+         10\.  .  *  *  .  .  .  .  .  .  .\10
+          11\.  *  *  *  .  .  .  .  .  .  .\11
+              a  b  c  d  e  f  g  h  i  j  k  
+528c7 info: Time for PreSearch: 0.071013s
+528c7 info: Creating thread 0
+528c7 info: StartSearch()[0]
+528c7 config: VCBuilder: reading captured set patterns from '/home/ubuntu/benzene/share/vc-captured-set.txt'.
+528c7 config: VCBuilder:: parsed 2 patterns.
+528c7 info: 
+Elapsed Time   7.17124s
+Count          54001
+GamesPlayed    54001
+Nodes          1057512
+Knowledge      79 (0.1%)
+Time           7.08
+GameLen        105.3 dev=3.0 min=3.0 max=107.0
+InTree         6.1 dev=2.0 min=0.0 max=13.0
+Aborted        0%
+Games/s        7624.6
+Score          0.40
+Sequence       d8 e7 e8 g7 g8 f8 e10 b9 b10 h8 c11 g2 a1
+528c7 info: 
