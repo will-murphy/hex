@@ -1,27 +1,27 @@
-528c7 config: MoHex v1.0.GIT Jul  6 2016.
-528c7 config: ============ InitializeSystem ============
-528c7 config: BenzeneProgram::InitRandom()
-528c7 config: Seed = 1482802112
-528c7 config: MoHexSharedPolicy: reading patterns from '/home/ubuntu/benzene/share/mohex-patterns.txt'.
-528c7 config: MoHexSharedPolicy: parsed 1 patterns.
-528c7 config: IcePatternSet: reading from '/home/ubuntu/benzene/share/ice-patterns.txt'.
-528c7 config: IcePatternSet: parsed 708 patterns.
-528c7 config: VCBuilder: reading captured set patterns from '/home/ubuntu/benzene/share/vc-captured-set.txt'.
-528c7 config: VCBuilder:: parsed 2 patterns.
-528c7 config: IcePatternSet: reading from '/home/ubuntu/benzene/share/ice-patterns.txt'.
-528c7 config: IcePatternSet: parsed 708 patterns.
-528c7 config: VCBuilder: reading captured set patterns from '/home/ubuntu/benzene/share/vc-captured-set.txt'.
-528c7 config: VCBuilder:: parsed 2 patterns.
-528c7 config: VCPattern: loading pattern templates from '/home/ubuntu/benzene/share/vc-patterns.txt'.
-528c7 info: Best move cannot be determined, must search state.
-528c7 info: --- MoHexPlayer::Search() ---
-528c7 info: Color: white
-528c7 info: MaxGames: 99999999
-528c7 info: NumberThreads: 1
-528c7 info: MaxNodes: 3252236 (260178880 bytes)
-528c7 info: TimeForMove: 10
-528c7 info: Moves to consider:
-528c7 info: 
+75da7 config: MoHex v1.0.GIT Jul  6 2016.
+75da7 config: ============ InitializeSystem ============
+75da7 config: BenzeneProgram::InitRandom()
+75da7 config: Seed = 1482804819
+75da7 config: MoHexSharedPolicy: reading patterns from '/home/ubuntu/benzene/share/mohex-patterns.txt'.
+75da7 config: MoHexSharedPolicy: parsed 1 patterns.
+75da7 config: IcePatternSet: reading from '/home/ubuntu/benzene/share/ice-patterns.txt'.
+75da7 config: IcePatternSet: parsed 708 patterns.
+75da7 config: VCBuilder: reading captured set patterns from '/home/ubuntu/benzene/share/vc-captured-set.txt'.
+75da7 config: VCBuilder:: parsed 2 patterns.
+75da7 config: IcePatternSet: reading from '/home/ubuntu/benzene/share/ice-patterns.txt'.
+75da7 config: IcePatternSet: parsed 708 patterns.
+75da7 config: VCBuilder: reading captured set patterns from '/home/ubuntu/benzene/share/vc-captured-set.txt'.
+75da7 config: VCBuilder:: parsed 2 patterns.
+75da7 config: VCPattern: loading pattern templates from '/home/ubuntu/benzene/share/vc-patterns.txt'.
+75da7 info: Best move cannot be determined, must search state.
+75da7 info: --- MoHexPlayer::Search() ---
+75da7 info: Color: white
+75da7 info: MaxGames: 99999999
+75da7 info: NumberThreads: 1
+75da7 info: MaxNodes: 3252236 (260178880 bytes)
+75da7 info: TimeForMove: 10
+75da7 info: Moves to consider:
+75da7 info: 
   e0986f07fd3c63f7
   a  b  c  d  e  f  g  h  i  j  k  
  1\.  .  .  .  *  .  .  .  .  .  w\1
@@ -36,22 +36,22 @@
          10\.  .  *  *  .  .  .  .  .  .  .\10
           11\.  *  *  *  .  .  .  .  .  .  .\11
               a  b  c  d  e  f  g  h  i  j  k  
-528c7 info: Time for PreSearch: 0.071013s
-528c7 info: Creating thread 0
-528c7 info: StartSearch()[0]
-528c7 config: VCBuilder: reading captured set patterns from '/home/ubuntu/benzene/share/vc-captured-set.txt'.
-528c7 config: VCBuilder:: parsed 2 patterns.
-528c7 info: 
-Elapsed Time   7.17124s
-Count          54001
-GamesPlayed    54001
-Nodes          1057512
-Knowledge      79 (0.1%)
-Time           7.08
-GameLen        105.3 dev=3.0 min=3.0 max=107.0
-InTree         6.1 dev=2.0 min=0.0 max=13.0
+75da7 info: Time for PreSearch: 0.072311s
+75da7 info: Creating thread 0
+75da7 info: StartSearch()[0]
+75da7 config: VCBuilder: reading captured set patterns from '/home/ubuntu/benzene/share/vc-captured-set.txt'.
+75da7 config: VCBuilder:: parsed 2 patterns.
+75da7 info: 
+Elapsed Time   6.74023s
+Count          47494
+GamesPlayed    47494
+Nodes          933291
+Knowledge      71 (0.1%)
+Time           6.65
+GameLen        105.3 dev=2.8 min=97.0 max=107.0
+InTree         6.2 dev=2.3 min=0.0 max=16.0
 Aborted        0%
-Games/s        7624.6
-Score          0.40
-Sequence       d8 e7 e8 g7 g8 f8 e10 b9 b10 h8 c11 g2 a1
-528c7 info: 
+Games/s        7142.1
+Score          0.39
+Sequence       d8 e7 e8 g7 d5 e5 g8 f8 e10 f9 f10 g9 j9 c1 a1
+75da7 info: 
