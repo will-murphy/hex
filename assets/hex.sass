@@ -1,22 +1,29 @@
 
-$hex-width: 80px
+$hex-width: 100px
 $hex-side-length: $hex-width * 0.5773502691896258
 $hex-height: $hex-side-length + 0.5 * $hex-width
 
 body
     background: #000
 
-.board
-    background: #000
-    white-space: nowrap
-
+.board-container
+    display: inline-block
     &.landscape
-        transform: rotate(-30deg) matrix(1, 0, 0, 1, 50, 0)
+        // TODO
 
     &.portrait
-        transform: matrix(1, 0, 0, 1, -100, 200) rotate(60deg)
+        // width: 
 
-    &> div:nth-child(2n)
+    .board
+        white-space: nowrap
+
+    &.landscape .board
+        transform: rotate(-30deg) matrix(1, 0, 0, 1, 50, 0)
+
+    &.portrait .board
+        transform: matrix(1, 0, 0, 1, -100, 600) rotate(60deg)
+
+    & .row:nth-child(2n)
         transform: translateX(0.5 * $hex-width)
 
 

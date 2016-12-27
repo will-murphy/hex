@@ -1,31 +1,32 @@
 body {
   background: #000; }
 
-.board {
-  background: #000;
-  white-space: nowrap; }
-  .board.landscape {
+.board-container {
+  display: inline-block; }
+  .board-container .board {
+    white-space: nowrap; }
+  .board-container.landscape .board {
     transform: rotate(-30deg) matrix(1, 0, 0, 1, 50, 0); }
-  .board.portrait {
-    transform: matrix(1, 0, 0, 1, -100, 200) rotate(60deg); }
-  .board > div:nth-child(2n) {
-    transform: translateX(40px); }
+  .board-container.portrait .board {
+    transform: matrix(1, 0, 0, 1, -100, 600) rotate(60deg); }
+  .board-container .row:nth-child(2n) {
+    transform: translateX(50px); }
 
 .hex {
   display: inline-block;
   margin: 0;
   border: none;
   padding: 0;
-  width: 80px;
-  height: 69.28203px; }
+  width: 100px;
+  height: 86.60254px; }
   .hex.space {
     opacity: 0; }
   .hex .in {
     position: absolute;
     border-left: 1px solid #000;
     border-right: 1px solid #000;
-    width: 80px;
-    height: 46.18802px;
+    width: 100px;
+    height: 57.73503px;
     background: #f8f8f8; }
     .hex .in:nth-child(2) {
       transform: rotate(60deg); }
