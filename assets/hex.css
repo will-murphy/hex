@@ -10,23 +10,23 @@ body {
   .board-container.portrait .board {
     transform: matrix(1, 0, 0, 1, -400, 800) rotate(60deg); }
   .board-container .row:nth-child(2n) {
-    transform: translateX(50px); }
+    transform: translateX(60px); }
 
 .hex {
   display: inline-block;
   margin: 0;
   border: none;
   padding: 0;
-  width: 100px;
-  height: 86.60254px; }
+  width: 120px;
+  height: 103.92305px; }
   .hex.space {
     opacity: 0; }
   .hex .in {
     position: absolute;
     border-left: 1px solid #000;
     border-right: 1px solid #000;
-    width: 100px;
-    height: 57.73503px;
+    width: 120px;
+    height: 69.28203px;
     background: #f8f8f8; }
     .hex .in:nth-child(2) {
       transform: rotate(60deg); }
