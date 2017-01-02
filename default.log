@@ -1,16 +1,16 @@
-7f4b7 config: MoHex v1.0.GIT Jul  6 2016.
-7f4b7 config: ============ InitializeSystem ============
-7f4b7 config: BenzeneProgram::InitRandom()
-7f4b7 config: Seed = 1483320780
-7f4b7 config: MoHexSharedPolicy: reading patterns from '/home/ubuntu/benzene/share/mohex-patterns.txt'.
-7f4b7 config: MoHexSharedPolicy: parsed 1 patterns.
-7f4b7 config: IcePatternSet: reading from '/home/ubuntu/benzene/share/ice-patterns.txt'.
-7f4b7 config: IcePatternSet: parsed 708 patterns.
-7f4b7 config: VCBuilder: reading captured set patterns from '/home/ubuntu/benzene/share/vc-captured-set.txt'.
-7f4b7 config: VCBuilder:: parsed 2 patterns.
-7f4b7 config: IcePatternSet: reading from '/home/ubuntu/benzene/share/ice-patterns.txt'.
-7f4b7 config: IcePatternSet: parsed 708 patterns.
-7f4b7 config: VCBuilder: reading captured set patterns from '/home/ubuntu/benzene/share/vc-captured-set.txt'.
-7f4b7 config: VCBuilder:: parsed 2 patterns.
-7f4b7 config: VCPattern: loading pattern templates from '/home/ubuntu/benzene/share/vc-patterns.txt'.
-7f4b7 info: Winning SC.
+83dd7 config: MoHex v1.0.GIT Jul  6 2016.
+83dd7 config: ============ InitializeSystem ============
+83dd7 config: BenzeneProgram::InitRandom()
+83dd7 config: Seed = 1483322666
+83dd7 config: MoHexSharedPolicy: reading patterns from '/home/ubuntu/benzene/share/mohex-patterns.txt'.
+83dd7 config: MoHexSharedPolicy: parsed 1 patterns.
+83dd7 config: IcePatternSet: reading from '/home/ubuntu/benzene/share/ice-patterns.txt'.
+83dd7 config: IcePatternSet: parsed 708 patterns.
+83dd7 config: VCBuilder: reading captured set patterns from '/home/ubuntu/benzene/share/vc-captured-set.txt'.
+83dd7 config: VCBuilder:: parsed 2 patterns.
+83dd7 config: IcePatternSet: reading from '/home/ubuntu/benzene/share/ice-patterns.txt'.
+83dd7 config: IcePatternSet: parsed 708 patterns.
+83dd7 config: VCBuilder: reading captured set patterns from '/home/ubuntu/benzene/share/vc-captured-set.txt'.
+83dd7 config: VCBuilder:: parsed 2 patterns.
+83dd7 config: VCPattern: loading pattern templates from '/home/ubuntu/benzene/share/vc-patterns.txt'.
+83dd7 info: Winning SC.

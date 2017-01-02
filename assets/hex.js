@@ -47,11 +47,12 @@ Tile = function(element, i, j) {
 Tile.fromName = function(name) {
   var i, j;
   i = CONFIG.ALPHABET.indexOf(name[0]);
-  j = -1 + Number(name[1]);
+  j = -1 + Number(name.slice(1));
   return tiles[i][j];
 };
 
 Tile.prototype.capture = function(color) {
+  debug('Capture me for ' + JSON.stringify(color));
   this.element.addClass(color);
   this.capturedBy = color;
   return game.history.push({
@@ -69,8 +70,12 @@ a = void 0;
 
 Game.prototype.playComputerMove = function(move) {
   var moves, password, url;
-  if (move !== void 0) {
+  debug('playComputerMove');
+  debug(move);
+  if (move !== undefined) {
+    debug(Tile.fromName(move.move));
     Tile.fromName(move.move).capture(move.color);
+    debug(Tile.fromName(move.move));
     return this.turn = CONFIG.HUMAN_COLOR;
   } else {
     password = 'Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL';
@@ -148,3 +153,8 @@ $(document).ready(function() {
   });
   return debug(tiles);
 });
+
+window.onload = () => {
+let y = [{"color":"white","move":"e6"},{"color":"white","move":"a1"},{"color":"white","move":"b1"},{"color":"white","move":"e1"},{"color":"white","move":"b5"},{"color":"white","move":"b6"},{"color":"white","move":"b7"},{"color":"white","move":"b8"},{"color":"white","move":"c4"},{"color":"white","move":"c8"},{"color":"white","move":"d4"},{"color":"white","move":"d5"},{"color":"white","move":"d6"},{"color":"white","move":"e7"},{"color":"white","move":"e8"},{"color":"white","move":"d9"},{"color":"white","move":"f3"},{"color":"white","move":"f4"},{"color":"white","move":"f8"},{"color":"white","move":"g2"},{"color":"white","move":"g4"},{"color":"white","move":"g5"},{"color":"white","move":"g6"},{"color":"white","move":"g8"},{"color":"white","move":"g9"},{"color":"white","move":"h2"},{"color":"white","move":"h7"},{"color":"white","move":"i2"},{"color":"white","move":"i5"},{"color":"white","move":"i6"},{"color":"white","move":"i7"},{"color":"white","move":"j3"},{"color":"white","move":"j8"},{"color":"black","move":"a5"},{"color":"black","move":"a6"},{"color":"black","move":"a7"},{"color":"black","move":"a8"},{"color":"black","move":"a9"},{"color":"black","move":"b4"},{"color":"black","move":"b1"},{"color":"black","move":"c2"},{"color":"black","move":"c3"},{"color":"black","move":"c5"},{"color":"black","move":"c6"},{"color":"black","move":"c7"},{"color":"black","move":"c9"},{"color":"black","move":"d7"},{"color":"black","move":"d8"},{"color":"black","move":"e3"},{"color":"black","move":"e4"},{"color":"black","move":"e5"},{"color":"black","move":"e9"},{"color":"black","move":"f5"},{"color":"black","move":"f6"},{"color":"black","move":"f7"},{"color":"black","move":"g3"},{"color":"black","move":"h3"},{"color":"black","move":"h4"},{"color":"black","move":"h5"},{"color":"black","move":"h6"},{"color":"black","move":"h8"},{"color":"black","move":"i4"},{"color":"black","move":"i8"},{"color":"black","move":"j4"},{"color":"black","move":"j5"},{"color":"black","move":"j6"}]
+y.map((move) => game.playComputerMove(move))
+};
