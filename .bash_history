@@ -1,171 +1,3 @@
-node
-node
-node
-node
-node
-node
-node
-let spawn = require('child_process').spawn;
-function Mohex() {     let self = this;          self.humanColor = 'black';     self.computerColor = 'white';     self.process = spawn('./benzene/mohex11', ['--seed', Mohex.seed()]);
-    self.log = {
-        stderr: [],
-        stdout: [],
-    };
-    
-    self.process.stderr.on('data', function (data) {
-        self.log.stderr.push(data.toString());
-    });
-    self.process.stdout.on('data', function (data) {
-        self.log.stdout.push(data.toString());
-    });
-    self.closed = false;
-    self.process.on('close', function (code) {
-        self.closed = true;
-        self.closedCode = code;
-    });
-}
-Mohex.seed = function () {
-    return String(Math.floor(Math.random() * 1e10));
-}
-Mohex.prototype.input = function (string, completed) {
-    this.process.stdin.write(string + '\n', completed);
-}
-Mohex.prototype.playHumanMove = function (move, onComputerMove) {
-    let self = this;
-    self.input('play ' + this.humanColor + ' ' + move, function () {
-        self.input('genmove ' + this.computerColor, function () {
-            console.log(JSON.stringify(self.log));
-        });
-    });
-}
-Mohex.prototype.playComputerMove = function (move) {
-    this.input('genmove ' + this.computerColor);
-}
-let mohex = new Mohex();
-mohex
-node
-node
-node
-node
-node
-node
-node
-node
-node
-node
-node
-node
-node
-node
-node
-node
-node -i mohex.js
-node -i server.js
-node -i
-node
-node
-node
-node
-node
-node
-node
-node
-node
-node
-node
-node
-node
-node
-node
-node
-node
-node
-tail server.js
-tail server.js
-tail server.js
-node server.js
-node
-node
-node server.js
-node server.js
-node server.js
-node server.js
-node server.js
-node server.js
-node server.js
-node server.js
-node server.js
-node server.js
-node server.js
-node server.js
-node server.js
-node server.js
-node server.js
-node server.js
-curl localhost:3000/?password
-curl localhost:3000/?password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL&moves=[]
-curl localhost:3000/?password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL&moves=[]
-curl localhost:3000/?password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL&moves=[]
-clear
-curl localhost:3000/?password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL&moves=%5B%5D
-curl localhost:3000/?password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL&moves=%5B%5D
-curl localhost:3000/?password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL&moves=%5B%5D
-curl localhost:3000/?moves=%5B%5D&password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL
-jobs
-jobs
-curl 'localhost:3000/?moves=%5B%5D&password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL'
-curl 'localhost:3000/?moves=%5B%5D&password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL'
-curl 'localhost:3000/?moves=%5B%5D&password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL'
-curl 'localhost:3000/?moves=%5B%5D&password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL'
-curl 'localhost:3000/?moves=%5B%5D&password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL'
-curl 'localhost:3000/?moves=%5B%5D&password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL'
-curl 'localhost:3000/?password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL&moves=%7B%22color%22%3A%22black%22%2C%22move%22%3A%22f6%22%7D'
-curl 'localhost:3000/?password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL&moves=%7B%22color%22%3A%22black%22%2C%22move%22%3A%22f6%22%7D'
-curl 'localhost:3000/?password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL&moves=%7B%22color%22%3A%22black%22%2C%22move%22%3A%22f6%22%7D'
-curl 'localhost:3000/?password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL&moves=%7B%22color%22%3A%22black%22%2C%22move%22%3A%22f6%22%7D'
-curl 'localhost:3000/?password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL&moves=%7B%22color%22%3A%22black%22%2C%22move%22%3A%22f6%22%7D'
-curl 'localhost:3000/?password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL&moves=%7B%22color%22%3A%22black%22%2C%22move%22%3A%22f6%22%7D'
-ls
-./benzene/mohex13
-curl 'localhost:3000/?password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL&moves=%5B%7B%22color%22%3A%22black%22%2C%22move%22%3A%22f6%22%7D%5D'
-curl 'localhost:3000/?password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL&moves=%5B%7B%22color%22%3A%22black%22%2C%22move%22%3A%22f6%22%7D%5D'
-curl 'localhost:3000/?password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL&moves=%5B%7B%22color%22%3A%22black%22%2C%22move%22%3A%22f6%22%7D%5D'
-curl 'localhost:3000/?password=Xe3KhwHMy3UK86JJM6zfLcLyZuhVCwPUTpHRNrRQcq8SxuefF6Maa99j46HbNyeawXpBnEPCK8eHsEJrMWQuKWsfwWgPjmZJEpA9uzSuFQM48CKRw8dyD6VL&moves=%5B%7B%22color%22%3A%22black%22%2C%22move%22%3A%22f6%22%7D%5D'
-node server.js
-clear
-node server.js
-node server.js
-node server.js
-node server.js
-node server.js
-node server.js
-node server.js
-node server.js
-node server.js
-node server.js
-node server.js
-node server.js
-node server.js
-node server.js
-./mohex13
-./benzene/mohex13
-./benzene/mohex13 --boardsize 13
-./benzene/mohex13 --boardsize 13
-./benzene/mohex13 --boardsize 119
-./benzene/mohex13 --boardsize 19
-./benzene/mohex13 --boardsize 13
-./benzene/mohex19 --boardsize 13
-./benzene/mohex19 --boardsize 19
-./benzene/mohex19 --boardsize 19
-./benzene/mohex13
-./benzene/mohex13 --boardsize 13 --seed 12345
-ls benzene
-node server.js
-node server.js
-clear
-node server.js
-clera
-clear
 node server.js
 sudo apt-get watch
 sudo apt-get install watch
@@ -498,3 +330,171 @@ sudo node direct.js 80
 sudo node direct.js 80
 sudo node direct.js 80
 sudo node direct.js 80
+emacs test.js
+git status
+ls
+du . -h
+git init
+git add -A
+git commit -m init
+git remote add origin https://github.com/will-murphy/hex.git
+git push -u origin master
+git status
+git status
+git diff
+git submodule init
+git submodule init
+git status
+git status
+emacs test.js
+mv test.js direct.js
+emacs direct.js
+emacs direct.js
+tmux attach
+curl localhost
+curl localhost/genmove
+curl localhost/genmove
+curl localhost
+git status
+pwd
+git status
+git pull
+git status
+git add -A
+cat logs.txt
+git status
+git diff
+cat default.log
+git commit logs
+git commit -m logs
+git push
+git stauts
+git status
+git status
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+time node direct.js 8000
+time node direct.js 8000
+time node direct.js 8000
+time node direct.js 8000
+time node direct.js 80
+time sudo node direct.js 80
+time sudo node direct.js 80
+time sudo node direct.js 80
+time sudo node direct.js 80
+time sudo node direct.js 80
+time sudo node direct.js 80
+time sudo node direct.js 80
+git status
+git add -A
+git commit -m 'it works!'
+git status
+git push origin mater
+git push origin master
+git status
+tmux
+tmux attach
+tmux attach
+git status
+tmux attach
+git add -A
+git commit -m 'frontend works'
+git status
+git push origin
+git status
+tmux
+emacs direct.js
+node test.js
+node test.js
+node test.js
+node test.js
+emacs mohex.js
+emacs server.js
+tmux
+sudo node server.js
+emacs mohex.js
+sudo node direct.js 80 | tee logs.txt
+repeat sudo node direct.js 80 | tee logs.txt
+repeat sudo node direct.js 80 | tee logs.txt
+ls
+clear
+cat logs.txt
+cat logs.txt
+cat logs.txt
+tail logs.txt
+tail logs.txt
+tail logs.txt
+date
+date
+date
+tail logs.txt
+git status
+tmux
+tmux attach
+repeat sudo node server.js
+repeat sudo node server.js
+sudo node server.js
+sudo node direct.js
+sudo node direct.js 80
+emacs direct.js
+emacs direct.js
+ls
+ls
+sudo node direct.js
+sudo node direct.js
+sudo node direct.js 80
+sudo node direct.js
+tmux
+ls
+py
+ls
+ls
+ps aux | grep repeat
+px aux 
+ps aux
+ps aux | tmux
+ps aux | grep tmux
+ps aux | grep direct.js
+kill 1810
+ps aux | grep direct.js
+ps aux | head
+ps aux | grep direct.js
+kill 10921
+kill 10922
+sudo kill 10922
+ps aux | grep direct.js
+sudo kill 10921
+ps aux | grep direct.js
+kill 1810
+ps aux | grep direct.js
+fg
+kill -9 1810
+ps aux | grep direct.js
+ps aux | grep direct.js
+ps aux | grep direct.js
+ps aux | grep direct.js
+ps aux | grep direct.js
+ps aux | grep direct.js
+ps aux | grep direct.js
+ps aux | grep direct.js
+ps aux | grep direct.js
+kill -9 11107
+kill 11107
+ps aux | grep direct.js
+kill 11108
+kill -9 11108
+ps aux | grep direct.js
+ps aux | grep direct.js
+clear
+node
+ls
+ps aux
+ps aux
+ps aux | grep repeat
+emacs direct.js
+tmux attach
+tmux attach

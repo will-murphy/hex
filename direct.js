@@ -6,23 +6,26 @@ let {Mohex} = require('./mohex.js');
 // console.log(mohex);
 let moves = [{"color":"black","move":"f6"},{"color":"white","move":"f5"},{"color":"black","move":"g5"},{"color":"white","move":"h3"},{"color":"black","move":"d6"},{"color":"white","move":"j2"},{"color":"black","move":"e4"},{"color":"white","move":"e6"},{"color":"black","move":"d7"},{"color":"white","move":"f2"},{"color":"black","move":"d3"}];
 
+let DEBUG = false;
+let p = (...args) => DEBUG ? console.log(...args) : undefined;
+
 let mohex = (moves, callback) => {
     let mohex = {};
     mohex.process = require('child_process').spawn('./benzene/mohex11');
-    //let stdout = '';
+    let stdout = '';
     mohex.process.stdout.on('data', (data) => {
 	data = data.toString();
-	//console.log('data');
-	//console.log(JSON.stringify(data));
+	p('data')
+	p(JSON.stringify(data));
 	let match = data.match(/= ([a-z][0-9]{1,2})\n\n/);
 	if (match !== null) {
 	    let computerMove = match[1];
-            //console.log('done');
-	    //console.log(computerMove);
+            p('done');
+	    p(computerMove);
 	    callback(computerMove);
 	    mohex.process.kill();
 	}
-	//stdout += data; 
+	stdout += data; 
     });
 
     /*
@@ -44,7 +47,7 @@ let mohex = (moves, callback) => {
 
 let express = require('express');
 let app = express();
-let PORT = Number(process.argv[2]);
+let PORT = Number(process.argv[2] || '80');
 
 let logCommunication = (string) => {
     console.log((new Date()) + ' ' + string);
@@ -53,7 +56,7 @@ let logCommunication = (string) => {
 app.get('/genmove', (req, res) => {
     logCommunication('GET /genmove');
     let moves = JSON.parse(req.query.moves);
-    //console.log(moves);
+    console.log(moves);
     mohex(moves, (move) => {
 	let out = JSON.stringify({ move: move, color: 'white' });
 	logCommunication('Respond: ' + out);
@@ -64,6 +67,10 @@ app.use(express.static('assets'));
 app.get('/', (req, res) => {
     logCommunication('GET /');
     res.sendFile('/home/ubuntu/assets/hex.html')});
+
+app.get('/kill', (req, res) => {
+    res.send('Killing...');
+    process.exit()});
 
 app.listen(PORT, () => {
   console.log('Example app listening on port ' + PORT + '!');

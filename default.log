@@ -1,57 +1,16 @@
-52c37 config: MoHex v1.0.GIT Jul  6 2016.
-52c37 config: ============ InitializeSystem ============
-52c37 config: BenzeneProgram::InitRandom()
-52c37 config: Seed = 1482806761
-52c37 config: MoHexSharedPolicy: reading patterns from '/home/ubuntu/benzene/share/mohex-patterns.txt'.
-52c37 config: MoHexSharedPolicy: parsed 1 patterns.
-52c37 config: IcePatternSet: reading from '/home/ubuntu/benzene/share/ice-patterns.txt'.
-52c37 config: IcePatternSet: parsed 708 patterns.
-52c37 config: VCBuilder: reading captured set patterns from '/home/ubuntu/benzene/share/vc-captured-set.txt'.
-52c37 config: VCBuilder:: parsed 2 patterns.
-52c37 config: IcePatternSet: reading from '/home/ubuntu/benzene/share/ice-patterns.txt'.
-52c37 config: IcePatternSet: parsed 708 patterns.
-52c37 config: VCBuilder: reading captured set patterns from '/home/ubuntu/benzene/share/vc-captured-set.txt'.
-52c37 config: VCBuilder:: parsed 2 patterns.
-52c37 config: VCPattern: loading pattern templates from '/home/ubuntu/benzene/share/vc-patterns.txt'.
-52c37 info: Best move cannot be determined, must search state.
-52c37 info: --- MoHexPlayer::Search() ---
-52c37 info: Color: white
-52c37 info: MaxGames: 99999999
-52c37 info: NumberThreads: 1
-52c37 info: MaxNodes: 3252236 (260178880 bytes)
-52c37 info: TimeForMove: 10
-52c37 info: Moves to consider:
-52c37 info: 
-  8c33a7bca15e193f
-  a  b  c  d  e  f  g  h  i  j  k  
- 1\.  .  .  *  *  *  *  *  *  *  .\1
-  2\.  .  *  *  *  *  *  *  *  *  .\2
-   3\.  *  *  *  *  *  *  *  *  *  .\3
-    4\.  *  *  *  *  *  *  *  *  *  .\4
-     5\.  *  *  *  .  *  *  *  *  *  .\5
-      6\.  *  *  *  *  *  *  *  *  *  .\6
-       7\.  *  *  *  *  *  B  *  *  *  .\7
-        8\.  *  *  *  *  *  *  *  *  *  .\8
-         9\.  *  *  *  *  *  *  *  *  *  .\9
-         10\.  *  *  *  *  *  *  *  *  .  .\10
-          11\.  *  *  *  *  *  *  *  .  .  .\11
-              a  b  c  d  e  f  g  h  i  j  k  
-52c37 info: Time for PreSearch: 0.640688s
-52c37 info: Creating thread 0
-52c37 info: StartSearch()[0]
-52c37 config: VCBuilder: reading captured set patterns from '/home/ubuntu/benzene/share/vc-captured-set.txt'.
-52c37 config: VCBuilder:: parsed 2 patterns.
-52c37 info: 
-Elapsed Time   10.0614s
-Count          130454
-GamesPlayed    130454
-Nodes          2963812
-Knowledge      139 (0.1%)
-Time           9.40
-GameLen        119.2 dev=1.7 min=113.0 max=120.0
-InTree         4.7 dev=1.1 min=0.0 max=9.0
-Aborted        0%
-Games/s        13873.7
-Score          0.48
-Sequence       g6 f6 f7 e7 j3
-52c37 info: 
+7f4b7 config: MoHex v1.0.GIT Jul  6 2016.
+7f4b7 config: ============ InitializeSystem ============
+7f4b7 config: BenzeneProgram::InitRandom()
+7f4b7 config: Seed = 1483320780
+7f4b7 config: MoHexSharedPolicy: reading patterns from '/home/ubuntu/benzene/share/mohex-patterns.txt'.
+7f4b7 config: MoHexSharedPolicy: parsed 1 patterns.
+7f4b7 config: IcePatternSet: reading from '/home/ubuntu/benzene/share/ice-patterns.txt'.
+7f4b7 config: IcePatternSet: parsed 708 patterns.
+7f4b7 config: VCBuilder: reading captured set patterns from '/home/ubuntu/benzene/share/vc-captured-set.txt'.
+7f4b7 config: VCBuilder:: parsed 2 patterns.
+7f4b7 config: IcePatternSet: reading from '/home/ubuntu/benzene/share/ice-patterns.txt'.
+7f4b7 config: IcePatternSet: parsed 708 patterns.
+7f4b7 config: VCBuilder: reading captured set patterns from '/home/ubuntu/benzene/share/vc-captured-set.txt'.
+7f4b7 config: VCBuilder:: parsed 2 patterns.
+7f4b7 config: VCPattern: loading pattern templates from '/home/ubuntu/benzene/share/vc-patterns.txt'.
+7f4b7 info: Winning SC.
