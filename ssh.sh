@@ -1,1 +1,2 @@
-ssh -i ../"Key pair created on 2016-06-25.pem" ubuntu@ec2-54-153-2-6.us-west-1.compute.amazonaws.com
+ssh -i ../"key-pair-2017-12-17.pem" ubuntu@ec2-52-26-223-91.us-west-2.compute.amazonaws.com
+
